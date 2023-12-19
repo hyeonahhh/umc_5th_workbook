@@ -2,7 +2,7 @@ package com.example.umc_5th_workbook7.web.controller;
 
 import com.example.umc_5th_workbook7.apiPayload.ApiResponse;
 import com.example.umc_5th_workbook7.converter.TempConverter;
-import com.example.umc_5th_workbook7.service.TempQueryService;
+import com.example.umc_5th_workbook7.service.TempService.TempQueryService;
 import com.example.umc_5th_workbook7.web.dto.TempResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
