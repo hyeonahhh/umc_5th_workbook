@@ -26,6 +26,7 @@ public class MissionExistValidator implements ConstraintValidator<ExistMission, 
 
     @Override
     public boolean isValid(Long value, ConstraintValidatorContext context) {
+        System.out.println(value);
         Optional<Mission> target = storeQueryService.findMission(value);
 
         if (target.isEmpty()){

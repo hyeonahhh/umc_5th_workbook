@@ -24,6 +24,7 @@ public class MemberExistsValidator implements ConstraintValidator<ExistMember, L
 
     @Override
     public boolean isValid(Long value, ConstraintValidatorContext context) {
+        System.out.println(value);
         Optional<Member> target = memberQueryService.findMember(value);
 
         if (target.isEmpty()){

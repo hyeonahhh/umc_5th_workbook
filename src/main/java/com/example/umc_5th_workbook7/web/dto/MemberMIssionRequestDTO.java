@@ -3,6 +3,7 @@ package com.example.umc_5th_workbook7.web.dto;
 import com.example.umc_5th_workbook7.apiPayload.validation.annotation.ExistCategories;
 import com.example.umc_5th_workbook7.apiPayload.validation.annotation.ExistMember;
 import com.example.umc_5th_workbook7.apiPayload.validation.annotation.ExistMission;
+import com.example.umc_5th_workbook7.apiPayload.validation.annotation.IsChallenging;
 import lombok.Getter;
 
 import javax.validation.constraints.NotBlank;
@@ -12,6 +13,7 @@ import java.util.List;
 
 public class MemberMIssionRequestDTO {
     @Getter
+    @IsChallenging
     public static class IsChallengingDTO{
 
         @ExistMember

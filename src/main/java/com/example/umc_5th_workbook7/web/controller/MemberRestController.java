@@ -33,8 +33,9 @@ public class MemberRestController {
 
     @PostMapping("/missions")
     public ApiResponse<MemberResponseDTO.MemberMissionResultDTO> participateMission(
-            @RequestBody @IsChallenging MemberMIssionRequestDTO.IsChallengingDTO request){
-
+            @RequestBody @Valid MemberMIssionRequestDTO.IsChallengingDTO request){
+        System.out.println(request.getMissionId());
+        System.out.println(request.getMemberId());
         MemberMission memberMission = memberCommandService.createMemberMission(request.getMissionId(), request.getMemberId());
         return ApiResponse.onSuccess(MemberMissionConverter.toCreateMemberMissionResultDTO(memberMission));
     }
