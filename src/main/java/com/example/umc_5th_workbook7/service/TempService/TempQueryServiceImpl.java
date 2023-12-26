@@ -1,4 +1,4 @@
-package com.example.umc_5th_workbook7.service;
+package com.example.umc_5th_workbook7.service.TempService;
 
 import com.example.umc_5th_workbook7.apiPayload.code.status.ErrorStatus;
 import com.example.umc_5th_workbook7.apiPayload.exception.handler.TempHandler;
